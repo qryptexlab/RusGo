@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="uz">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>RusGo</title>
+<meta name="description" content="RusGo: rus tilini o'rganish sayti. Yaratuvchi: Qryptex Lab">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Unbounded:wght@400;600;800&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="flagband" aria-hidden="true"><i></i><i></i><i></i></div>
+<div class="wrap">
+  <header class="top">
+    <span class="brand">Rus<b>GO</b></span>
+    <nav aria-label="Bo'limlar"><a href="#line">Bekatlar</a><a href="#alpha">Alifbo</a></nav>
+  </header>
+
+  <section class="hero">
+    <div>
+      <h1>Ruscha &mdash; <em>bekatma-bekat</em></h1>
+      <p>Har bir mavzu alohida bekat. Salomlashishdan boshlang, so'zlarni o'zbekcha tarjima bilan o'qing, ruscha o'qilishini ko'ring va mashq bilan mustahkamlang. Hozir <strong><span id="nWords">0</span> ta so'z</strong>, <strong><span id="nSt">0</span> ta bekat</strong> va rus alifbosining <strong>33 harfi</strong> bor.</p>
+      <a class="go" href="#line">Yo'lga chiqish
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+    </div>
+    <div class="art"><img class="logo" src="logo.webp" alt="RusGo logotipi: A B harfli kitob, Rossiya bayrog'i va Spasskaya minorasi" width="1000" height="667"></div>
+  </section>
+
+  <section class="block" id="line">
+    <div class="head">
+      <div>
+        <h2>Bekatlar</h2>
+        <p>Bekatni tanlang, kartani bosib ruscha so'zni eshiting.</p>
+      </div>
+      <label class="search">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>
+        <input id="q" type="search" placeholder="So'z qidirish: rahmat, спасибо..." autocomplete="off" aria-label="So'z qidirish">
+      </label>
+    </div>
+    <div class="metro">
+      <ul class="stations" id="stations" aria-label="Bekatlar ro'yxati"></ul>
+      <div class="panel" id="panel" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <section class="block" id="alpha">
+    <div class="head">
+      <div>
+        <h2>Alifbo</h2>
+        <p>Harfni bosing: tovushi, o'zbekcha ekvivalenti va misol so'z chiqadi.</p>
+      </div>
+    </div>
+    <div class="alpha">
+      <div class="letters" id="letters"></div>
+      <div class="ldet" id="ldet"></div>
+    </div>
+  </section>
+
+  <footer>
+    <span><b>RusGo</b> &middot; rus tilini o'rganish sayti</span>
+    <span>Yaratuvchi: <b>Qryptex Lab</b></span>
+  </footer>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
